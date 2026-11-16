@@ -4,50 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jai Tawar - Personal Resume</title>
+    <!-- Google Fonts for Editorial Heading & Clean Body Readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Sticky Top Navigation Bar -->
     <nav id="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#leadership">Leadership</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-inner">
+            <span class="brand-name">Jai Tawar</span>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#leadership">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Header Section -->
-    <header id="top-header">
-        <img src="profile.jpg" alt="Jai Tawar Profile Photo" id="profile-pic">
-        <h1>Jai Tawar</h1>
-        <p class="tagline">Commerce Undergraduate (BBA-DBE &amp; BMS) | Former Indian Naval Academy Officer Cadet</p>
-        <p class="contact-line">Mumbai, Maharashtra, 400056 | +91 99706 54069 | jaitawar05@gmail.com</p>
+    <!-- Split Hero Header Section -->
+    <header id="hero-banner">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="eyebrow-gold">COMMERCE UNDERGRADUATE &bull; FORMER INA OFFICER CADET</p>
+                <h1>Jai Tawar</h1>
+                <p class="hero-bio">
+                    Commerce undergraduate and former Indian Naval Academy Officer Cadet, bringing a rare blend of military discipline and a strong quantitative foundation from a Science (PCM) background into business, finance, and strategy. Driven by continuous learning and clear communication.
+                </p>
+                <div class="pill-row">
+                    <span class="pill-tag">BBA-DBE, IIM Bangalore (2026 - 2029)</span>
+                    <span class="pill-tag">BMS, NMCC Mumbai</span>
+                    <span class="pill-tag">Finance &amp; Strategy</span>
+                    <span class="pill-tag">Public Speaking</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#leadership" class="btn-gold">View Experience</a>
+                    <a href="#contact" class="btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-photo-box">
+                <img src="profile.jpg" alt="Jai Tawar Portrait" id="profile-pic">
+            </div>
+        </div>
     </header>
 
     <!-- Main Content Container -->
     <main class="container">
 
-        <!-- Professional Summary Section -->
-        <section id="about" class="resume-section">
-            <h2>Professional Summary</h2>
-            <p>
-                Commerce undergraduate and former Indian Naval Academy Officer Cadet, bringing a rare blend of military discipline and a strong quantitative foundation from a Science (PCM) background into the world of business and finance. An articulate public speaker and clear communicator, currently building a broad base across finance, strategy, and analytics while actively exploring which area of commerce to specialize in. Comfortable navigating change, having made the deliberate shift from a science stream to commerce, and now applying that same adaptability to evaluating career paths in finance, consulting, and management.
-            </p>
+        <!-- About Me Card -->
+        <section id="about" class="card-section">
+            <p class="section-label">ABOUT ME</p>
+            <h2>Disciplined Leader, Quantitative Thinker &amp; Continuous Learner</h2>
+            <div class="about-left">
+                <p>
+                    An articulate public speaker and clear communicator, currently building a broad base across finance, strategy, and analytics while actively exploring career paths in consulting and management. Comfortable navigating change, having made the deliberate shift from a Science (PCM) and military training background into commerce.
+                </p>
+            </div>
+            <div class="about-right">
+                <p class="meta-title">BASED IN</p>
+                <p class="meta-value">Mumbai, Maharashtra, India</p>
+                <p class="meta-title">STUDYING</p>
+                <p class="meta-value">BBA-DBE at IIM Bangalore &amp; BMS at NMCC (2026 - 2029)</p>
+                <p class="meta-title">LANGUAGES</p>
+                <p class="meta-value">English, Hindi, Marathi</p>
+            </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education" class="resume-section">
-            <h2>Education</h2>
+        <!-- Leadership & Military Training Card -->
+        <section id="leadership" class="card-section">
+            <p class="section-label">LEADERSHIP &amp; MILITARY TRAINING</p>
+            <h2>Experience &amp; Projects</h2>
+
+            <article class="sub-card">
+                <p class="card-tag">OFFICER TRAINING</p>
+                <h3>Officer Cadet (Boarded Out on Medical Grounds)</h3>
+                <p class="sub-info">Indian Naval Academy (INA), Ezhimala, Kerala</p>
+                <ul>
+                    <li>Cleared the NDA written examination, SSB interview, and medical examination in the very first attempt while simultaneously preparing for board examinations.</li>
+                    <li>Underwent rigorous officer training in strategic leadership, rapid decision-making, physical endurance, and operational tactics.</li>
+                    <li>Maintained high standards of personal accountability, time management, and team cohesion before an honourable exit due to a training-related knee injury.</li>
+                </ul>
+            </article>
+
+            <article class="sub-card">
+                <p class="card-tag">CADET LEADERSHIP</p>
+                <h3>Cadet Quartermaster Sergeant (CQMS)</h3>
+                <p class="sub-info">Services Preparatory Institute (SPI), Aurangabad &bull; Class XII</p>
+                <ul>
+                    <li>Held the rank of Cadet Quartermaster Sergeant, responsible for logistics, stores, and discipline within the cadet unit.</li>
+                    <li>Built a strong foundation in structured leadership, accountability, and team coordination ahead of INA selection.</li>
+                </ul>
+            </article>
+
+            <article class="sub-card full-width-card">
+                <p class="card-tag">ACADEMIC PROJECT</p>
+                <h3>Personal Resume Website (IIM Bangalore BBA-DBE Mid-Term Project)</h3>
+                <p class="sub-info">HTML5 &bull; CSS3 &bull; Google Fonts &bull; GitHub Pages</p>
+                <p>
+                    Designed, structured, and hosted a responsive personal resume website using semantic HTML5 elements and an external CSS3 stylesheet.
+                </p>
+            </article>
+        </section>
+
+        <!-- Key Skills & Hobbies Section -->
+        <section id="skills" class="card-section">
+            <p class="section-label">KEY SKILLS &amp; INTERESTS</p>
+            <h2>Leadership, Strategy &amp; Personal Drive</h2>
+
+            <div class="three-col-box">
+                <h3>Communication &amp; Strategy</h3>
+                <span class="skill-pill">Public Speaking</span>
+                <span class="skill-pill">Debate &amp; Facilitation</span>
+                <span class="skill-pill">Command &amp; Control</span>
+                <span class="skill-pill">Conflict Resolution</span>
+                <span class="skill-pill">Team Coordination</span>
+            </div>
+
+            <div class="three-col-box">
+                <h3>Quantitative &amp; Business</h3>
+                <span class="skill-pill">Calculus &amp; Probability</span>
+                <span class="skill-pill">Analytical Reasoning</span>
+                <span class="skill-pill">Finance &amp; Strategy</span>
+                <span class="skill-pill">Logistics Management</span>
+                <span class="skill-pill">HTML5 &amp; CSS3</span>
+            </div>
+
+            <div class="three-col-box">
+                <h3>Athletics &amp; Hobbies</h3>
+                <span class="skill-pill">District-Level Football</span>
+                <span class="skill-pill">District-Level 400m Athlete</span>
+                <span class="skill-pill">Regular Easy Runs</span>
+                <span class="skill-pill">Traveling &amp; Meeting People</span>
+                <span class="skill-pill">Global Geopolitics</span>
+            </div>
+        </section>
+
+        <!-- Education Path Section -->
+        <section id="education" class="card-section">
+            <p class="section-label">EDUCATION</p>
+            <h2>Academic Path</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Qualification / Program</th>
+                        <th>Program / Qualification</th>
                         <th>Institution</th>
-                        <th>Year / Score</th>
+                        <th>Duration / Score</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,70 +170,37 @@
                     <tr>
                         <td>Class XII (Science, PCM)</td>
                         <td>Services Preparatory Institute (SPI), Aurangabad</td>
-                        <td>2025 (80%)</td>
+                        <td>2025 &bull; 80%</td>
                     </tr>
                     <tr>
                         <td>Class X</td>
                         <td>Secondary School Education</td>
-                        <td>2023 (93%)</td>
+                        <td>2023 &bull; 93%</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- Leadership & Military Training Section -->
-        <section id="leadership" class="resume-section">
-            <h2>Leadership &amp; Military Training</h2>
-
-            <article class="experience-card">
-                <h3>Officer Cadet (Boarded Out on Medical Grounds)</h3>
-                <p class="sub-info">Indian Naval Academy (INA), Ezhimala, Kerala, India</p>
-                <ul>
-                    <li>Cleared the NDA written examination, SSB interview, and medical examination in the very first attempt to earn selection into the Indian Naval Academy while simultaneously preparing for board examinations.</li>
-                    <li>Underwent rigorous officer training in strategic leadership, rapid decision-making, physical endurance, and operational tactics.</li>
-                    <li>Maintained high standards of personal accountability, time management, and team cohesion throughout training.</li>
-                    <li>Sustained a training-related knee injury and was subsequently declared unfit for service, leading to an honourable exit from the Academy.</li>
-                </ul>
-            </article>
-
-            <article class="experience-card">
-                <h3>Cadet Quartermaster Sergeant (CQMS)</h3>
-                <p class="sub-info">Services Preparatory Institute (SPI), Aurangabad | Class XII</p>
-                <ul>
-                    <li>Held the rank of Cadet Quartermaster Sergeant, responsible for logistics, stores, and discipline within the cadet unit.</li>
-                    <li>Built a foundation in structured leadership, accountability, and team management ahead of selection into the Indian Naval Academy.</li>
-                </ul>
-            </article>
-        </section>
-
-        <!-- Core Skills & Competencies Section -->
-        <section id="skills" class="resume-section">
-            <h2>Core Skills &amp; Competencies</h2>
-            <ul class="skills-list">
-                <li><strong>Public Speaking &amp; Communication:</strong> Articulate speaker with strong verbal and written English, presentation design, debate, and group facilitation skills.</li>
-                <li><strong>Analytical &amp; Quantitative:</strong> Strong grounding in Mathematics (Calculus, Probability) from a Science (PCM) background.</li>
-                <li><strong>Strategic &amp; Soft Skills:</strong> Command &amp; control execution, high adaptability, team coordination, and conflict resolution developed through military training.</li>
-                <li><strong>Current Focus Areas:</strong> Actively evaluating specializations across finance, marketing, and strategy through coursework, internships, and campus involvement.</li>
-                <li><strong>Languages Known:</strong> English, Hindi, Marathi.</li>
-            </ul>
-        </section>
-
-        <!-- Achievements Section -->
-        <section id="achievements" class="resume-section">
-            <h2>Achievements</h2>
+        <!-- Honors & Achievements Section -->
+        <section id="achievements" class="card-section">
+            <p class="section-label">HONORS &amp; SPORTS</p>
+            <h2>Achievements &amp; Extracurriculars</h2>
             <ul>
-                <li>Winner, Debate Competition at the Indian Naval Academy (INA).</li>
-                <li>Winner, Inter-House / School Debate Competition.</li>
-                <li>Ranked among the Top 3 in an 8 km Cross-Country run within the course at the Indian Naval Academy.</li>
+                <li><strong>Debate Winner (INA):</strong> Winner of the Debate Competition at the Indian Naval Academy (INA).</li>
+                <li><strong>Inter-House Debate Winner:</strong> Winner of the Inter-House / School Debate Competition.</li>
+                <li><strong>8 km Cross-Country Top 3 (INA):</strong> Ranked among the Top 3 within the course at the Indian Naval Academy.</li>
+                <li><strong>District-Level Athlete &amp; Footballer:</strong> Competed at the district level in Football and the 400-meter sprint, complemented by regular easy runs.</li>
+                <li><strong>Global Perspectives:</strong> Enthusiastic traveler who enjoys meeting new people, learning from diverse experiences, and following global geopolitics.</li>
             </ul>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="resume-section">
-            <h2>Contact &amp; Profiles</h2>
+        <section id="contact" class="card-section">
+            <p class="section-label">CONTACT &amp; CREDENTIALS</p>
+            <h2>Let's Connect</h2>
+            <p><strong>Location:</strong> Mumbai, Maharashtra, 400056</p>
             <p><strong>Email:</strong> <a href="mailto:jaitawar05@gmail.com">jaitawar05@gmail.com</a></p>
             <p><strong>Phone:</strong> +91 99706 54069</p>
-            <p><strong>Location:</strong> Mumbai, Maharashtra, 400056</p>
             <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jai-tawar-7b98a9431" target="_blank">linkedin.com/in/jai-tawar-7b98a9431</a></p>
         </section>
 
@@ -135,7 +208,7 @@
 
     <!-- Footer -->
     <footer id="page-footer">
-        <p>&copy; 2026 Jai Tawar | Personal Resume Website</p>
+        <p>&copy; 2026 Jai Tawar &bull; Mumbai, India</p>
     </footer>
 
 </body>
