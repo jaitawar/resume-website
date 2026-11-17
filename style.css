@@ -1,3 +1,8 @@
+/* Universal Box-Sizing Fix */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Base Element Selectors */
 body {
     font-family: 'Plus Jakarta Sans', Arial, sans-serif;
@@ -96,7 +101,7 @@ tr:nth-child(even) {
     color: #ffffff;
     font-weight: 700;
     font-size: 18px;
-    margin-right: 40px;
+    margin-right: 36px;
 }
 
 #navbar ul {
@@ -138,14 +143,14 @@ tr:nth-child(even) {
 .hero-text {
     display: inline-block;
     vertical-align: middle;
-    width: 62%;
-    padding-right: 25px;
+    width: 65%;
+    padding-right: 28px;
 }
 
 .hero-photo-box {
     display: inline-block;
     vertical-align: middle;
-    width: 30%;
+    width: 33%;
     text-align: right;
 }
 
@@ -195,7 +200,7 @@ tr:nth-child(even) {
     border-radius: 24px;
     font-size: 14px;
     font-weight: 700;
-    margin-right: 10px;
+    margin: 4px 10px 4px 0;
 }
 
 .btn-gold:hover {
@@ -211,6 +216,7 @@ tr:nth-child(even) {
     border-radius: 24px;
     font-size: 14px;
     font-weight: 600;
+    margin: 4px 0;
 }
 
 .btn-outline:hover {
@@ -245,14 +251,14 @@ tr:nth-child(even) {
 .about-left {
     display: inline-block;
     vertical-align: top;
-    width: 56%;
-    padding-right: 25px;
+    width: 58%;
+    padding-right: 28px;
 }
 
 .about-right {
     display: inline-block;
     vertical-align: top;
-    width: 36%;
+    width: 40%;
 }
 
 .meta-title {
@@ -274,16 +280,16 @@ tr:nth-child(even) {
 .sub-card {
     display: inline-block;
     vertical-align: top;
-    width: 44%;
+    width: 48%;
     background-color: #faf8f4;
     border: 1px solid #e5dfd3;
     border-radius: 12px;
     padding: 20px;
-    margin: 8px 10px 12px 0;
+    margin: 8px 1% 12px 0;
 }
 
 .full-width-card {
-    width: 93%;
+    width: 98%;
 }
 
 .card-tag {
@@ -306,13 +312,12 @@ tr:nth-child(even) {
 .three-col-box {
     display: inline-block;
     vertical-align: top;
-    width: 28%;
-    min-width: 220px;
+    width: 31.5%;
     background-color: #faf8f4;
     border: 1px solid #e5dfd3;
     border-radius: 12px;
     padding: 18px;
-    margin: 6px 8px 6px 0;
+    margin: 6px 1% 8px 0;
 }
 
 .skill-pill {
@@ -335,4 +340,42 @@ tr:nth-child(even) {
     padding: 20px;
     margin-top: 40px;
     font-size: 14px;
+}
+
+/* Mobile & Tablet Responsive Fixes */
+@media (max-width: 768px) {
+    .brand-name {
+        display: block;
+        margin-bottom: 8px;
+    }
+    #navbar li {
+        margin: 4px 10px 4px 0;
+    }
+    .hero-text, .hero-photo-box, .about-left, .about-right, .sub-card, .full-width-card, .three-col-box {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .hero-photo-box {
+        text-align: left;
+        margin-top: 22px;
+    }
+    #profile-pic {
+        width: 200px;
+        height: 240px;
+    }
+    .card-section {
+        padding: 22px 20px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
 }
